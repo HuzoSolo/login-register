@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--Bootstrap imports-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/index.css">
+    <!--Font-Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <div class="row">
+        <div class="col-lg-1 col-sm-1 col-md-1 col-xl-2"></div>
+        <!--content-->
+        <div class="col-lg-10 col-sm-10 col-md-10 col-xl-8">
+
+            <!--container-->
+            <div class="container rounded-2 shadow mx-auto my-auto bg-light mt-5">
+
+                <div class="row">
+                    <!--img-->
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+                        <div class="gradient w-100 h-100 text-center text-white p-5">
+                            <h1>Lorem,</h1>
+                            <h2>İpsum dolor sit amet;</h2>
+                            <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+                        </div>
+                    </div>
+                    <!--inputs-->
+                    <div class="col-sm-12 col-md-12 col-lg-6 ol-xl-6 col-xxl-6">
+                        <div class="row-vertical">
+                            <!--language-->
+                            <div class="col mt-2">
+                                <div class="row">
+                                    <div class="col-sm-9 col-md-9 col-lg-8 ol-xl-8 col-xxl-8"></div>
+                                    <div class="col-sm-3 col-md-3 col-lg-4 ol-xl-4 col-xxl-4 float-end">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="floatingSelect"
+                                                aria-label="Floating label select example">
+                                                <option selected>Languages</option>
+                                                <option value="1">Türkçe</option>
+                                                <option value="2">English</option>
+                                            </select>
+                                            <label for="floatingSelect">Select a Language</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--header-->
+                            <div class="col">
+                                <h1 class="loginttl mb-4">Login</h1>
+                            </div>
+                            <!--e-mail-->
+                            <div class="col">
+                                <div class="form-floating mb-4">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput" class="floatinglbl"><i class="fa-solid fa-envelope"></i>
+                                        Email
+                                        address</label>
+                                </div>
+                            </div>
+                            <!--password-->
+                            <div class="col mb-5">
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="floatingPassword"
+                                        placeholder="Password">
+                                    <label for="floatingPassword" class="floatinglbl"><i class="fa-solid fa-key"></i>
+                                        Password</label>
+                                </div>
+                            </div>
+                            <!--remember me & forgot password-->
+                            <div class="col mb-3">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <p class="float-end"><a href="#">Forgot</a> your password?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--register & submit-->
+                            <div class="col mb-2">
+                                <div class="row">
+                                    <div class="col-9 pt-2">
+                                        <p>don't have an account ? <a href="#">register</a> now!</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn custom" style="width: 100%; height: 100%;">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-1 col-md-1 col-xl-2"></div>
+    </div>
+
+    <!--modal for forgot password panel-->
+
+    <!--Bootstrap imports-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
