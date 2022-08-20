@@ -2,71 +2,46 @@
   .gradient {
     display: none;
   }
-  html {
-    height: 100%;
-  }
-  body {
-    height: 100%;
-  }
 }
 @media (min-width: 576px) {
   .gradient {
     display: none;
-  }
-  html {
-    height: 100%;
-  }
-  body {
-    height: 100%;
   }
 }
 @media (min-width: 768px) {
   .gradient {
     display: none;
   }
-  html {
-    height: 100%;
-  }
-  body {
-    height: 100%;
-  }
 }
 @media (min-width: 992px) {
   .gradient {
     display: block;
   }
-  html {
-    height: 100%;
-  }
-  body {
-    height: 100%;
+  .box {
+    width: 40%;
   }
 }
 @media (min-width: 1200px) {
   .gradient {
     display: block;
   }
-  html {
-    height: 100%;
-  }
-  body {
-    height: 100%;
+  .box {
+    width: 40%;
   }
 }
 @media (min-width: 1400px) {
   .gradient {
     display: block;
   }
-  html {
-    height: 100%;
-  }
-  body {
-    height: 100%;
+  .box {
+    width: 40%;
   }
 }
 body {
   background-image: url("https://img.freepik.com/free-vector/minimal-white-gray-background-with-wavy-lines_1017-25099.jpg?w=1380&t=st=1660238399~exp=1660238999~hmac=525361d656640dc9d50ca98071d901fd841bce558b2fab28c18dec9d6e9a4cf4");
   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -124,4 +99,16 @@ a:hover {
 
 .floatinglbl {
   color: #2a456e;
+}
+
+.spnr {
+  color: #0d6efd;
+}
+
+.box {
+  margin-top: 10%;
+}
+
+.alert {
+  background-color: rgba(13, 109, 253, 0.2392156863) !important;
 }/*# sourceMappingURL=index.css.map */

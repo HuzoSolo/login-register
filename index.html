@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="../assets/sun-icon-31.png" type="image/icon type">
+    <!--Bootstrap imports-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <!--Font-Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--google-sign-in-->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+
+<body>
+
+
+    <div class="row">
+        <div class="col-lg-1 col-sm-1 col-md-1 col-xl-2"></div>
+        <!--content-->
+        <div class="col-lg-10 col-sm-10 col-md-10 col-xl-8">
+
+            <!--container-->
+            <div class="container rounded-2 shadow mx-auto my-auto bg-light mt-5">
+
+                <div class="row">
+                    <!--img-->
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0">
+                        <div class="gradient w-100 h-100 text-center text-white p-5">
+                            <h1>Lorem,</h1>
+                            <h2>İpsum dolor sit amet;</h2>
+                            <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+                        </div>
+                    </div>
+                    <!--inputs-->
+                    <div class="col-sm-12 col-md-12 col-lg-6 ol-xl-6 col-xxl-6">
+                        <div class="row-vertical">
+                            <!--language-->
+                            <div class="col mt-2">
+                                <div class="row">
+                                    <div class="col-sm-9 col-md-9 col-lg-8 ol-xl-8 col-xxl-8"></div>
+                                    <div class="col-sm-3 col-md-3 col-lg-4 ol-xl-4 col-xxl-4 float-end">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="floatingSelect"
+                                                aria-label="Floating label select example">
+                                                <option selected>Languages</option>
+                                                <option value="1">Türkçe</option>
+                                                <option value="2">English</option>
+                                            </select>
+                                            <label for="floatingSelect">Select a Language</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--header-->
+                            <div class="col">
+                                <h1 class="loginttl mb-4">Login</h1>
+                            </div>
+                            <!--e-mail-->
+                            <div class="col">
+                                <div class="form-floating mb-4">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput" class="floatinglbl"><i class="fa-solid fa-envelope"></i>
+                                        Email
+                                        address</label>
+                                </div>
+                            </div>
+                            <!--password-->
+                            <div class="col mb-5">
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="floatingPassword"
+                                        placeholder="Password">
+                                    <label for="floatingPassword" class="floatinglbl"><i class="fa-solid fa-key"></i>
+                                        Password</label>
+                                </div>
+                            </div>
+                            <!--remember me & forgot password-->
+                            <div class="col mb-3">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <p class="float-end"><a href="#" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Forgot</a> your password?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--register & submit-->
+                            <div class="col mb-2">
+                                <div class="row">
+                                    <div class="col-9 pt-2">
+                                        <p>don't have an account ? <a href="/register.html">register</a> now!</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn custom" style="width: 100%; height: 100%;">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-1 col-md-1 col-xl-2"></div>
+    </div>
+
+    <!--modal for forgot password panel-->
+    <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Change Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-floating mb-4">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="floatinglbl"><i class="fa-solid fa-envelope"></i>
+                            Email
+                            address</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn custom rounded" data-bs-dismiss="modal">Close</button>
+                    <button id="kt_docs_toast_stack_button" type="button" class="btn custom rounded">Send Recovery
+                        mail</button>
+                    <!--Toast notf beginning-->
+                    <div id="kt_docs_toast_stack_container"
+                        class="toast-container position-fixed top-0 end-0 p-3 z-index-3">
+                        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-kt-docs-toast="stack">
+                            <div class="toast-header">
+                                <span class="svg-icon svg-icon-2 svg-icon-primary me-3">
+                                    <div class="spinner-border spnr" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </span>
+                                <strong class="me-auto">Successful</strong>
+                                <small>Just Now!</small>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                                Please check your mail and follow the link!
+                            </div>
+                        </div>
+                    </div>
+                    <!--Toast notf end-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--toast-script-->
+    <script>
+        // Select elements
+        const button = document.getElementById('kt_docs_toast_stack_button');
+        const container = document.getElementById('kt_docs_toast_stack_container');
+        const targetElement = document.querySelector('[data-kt-docs-toast="stack"]'); // Use CSS class or HTML attr to avoid duplicating ids
+
+        // Remove base element markup
+        targetElement.parentNode.removeChild(targetElement);
+
+        // Handle button click
+        button.addEventListener('click', e => {
+            e.preventDefault();
+
+            // Create new toast element
+            const newToast = targetElement.cloneNode(true);
+            container.append(newToast);
+
+            // Create new toast instance --- more info: https://getbootstrap.com/docs/5.1/components/toasts/#getorcreateinstance
+            const toast = bootstrap.Toast.getOrCreateInstance(newToast);
+
+            // Toggle toast to show --- more info: https://getbootstrap.com/docs/5.1/components/toasts/#show
+            toast.show();
+        });
+    </script>
+
+    <!--google-script-->
+    <script>
+        function onSignIn(googleUser) {
+            // Useful data for your client-side scripts:
+            var profile = googleUser.getBasicProfile();
+            console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+            console.log('Full Name: ' + profile.getName());
+            console.log('Given Name: ' + profile.getGivenName());
+            console.log('Family Name: ' + profile.getFamilyName());
+            console.log("Image URL: " + profile.getImageUrl());
+            console.log("Email: " + profile.getEmail());
+
+            // The ID token you need to pass to your backend:
+            var id_token = googleUser.getAuthResponse().id_token;
+            console.log("ID Token: " + id_token);
+        }
+    </script>
+
+
+    <!--Bootstrap imports-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

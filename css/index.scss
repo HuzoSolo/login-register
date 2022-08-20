@@ -4,8 +4,11 @@
 body {
 
     background-image: url("https://img.freepik.com/free-vector/minimal-white-gray-background-with-wavy-lines_1017-25099.jpg?w=1380&t=st=1660238399~exp=1660238999~hmac=525361d656640dc9d50ca98071d901fd841bce558b2fab28c18dec9d6e9a4cf4");
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
+    
 
 }
 
@@ -85,4 +88,18 @@ a:hover {
 
     color: $blue-floating-label;
 
+}
+
+.spnr{
+
+    color: $blue-theme-color;
+}
+
+.box{
+
+    margin-top: 10%;
+}
+
+.alert{
+    background-color: $blue-theme-color-transparent !important;
 }
